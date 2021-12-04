@@ -1,0 +1,88 @@
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+***/
+// :root {
+//   font-size: calc(1vw + 0.6em);
+// }
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+button {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $main;
+  border-radius: 5px;
+  border: 4px solid $black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($color: red, $alpha: 0.3);
+}
+/*** 
+  ====================================================================
+      Global Settings
+  ====================================================================
+   ***/
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: $white;
+  line-height: 1.7em;
+  font-weight: 400;
+  background: $black;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+.auto__container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}

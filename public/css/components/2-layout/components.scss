@@ -1,0 +1,279 @@
+h2 {
+  font-family: $font-aclonica;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 65px;
+  position: relative;
+}
+h3 {
+  font-family: $font-aclonica;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  position: relative;
+  text-align: center;
+  color: $white;
+}
+h4 {
+  font-family: $font-aclonica;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
+  color: $white;
+  text-align: center;
+}
+p {
+  font-family: $font-poppins;
+  position: relative;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 142.5%;
+  color: rgba($color: $white, $alpha: 0.87);
+  text-shadow: 0px 3px 0px rgba($color: $black, $alpha: 0.2);
+}
+.button {
+  padding: 16px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-rubik;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  background: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  @include transition;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.primary {
+    color: $white;
+    border: 1px solid $white;
+  }
+  &.secondary {
+    background: linear-gradient(63.68deg, #efbe0f 0%, #cb2f0d 98.08%);
+    border: 1px solid $white;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+    text-shadow: 0px 2px 0px rgba($color: $black, $alpha: 0.25);
+    img {
+      width: 36px;
+    }
+  }
+  img {
+    width: 18px;
+    margin-right: 10px;
+  }
+}
+.smokeWrapper {
+  background: url(../images/smoke.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+// .smoke {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   overflow: hidden;
+//   background: url(../images/smoke.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   &Wrapper {
+//     position: relative;
+//   }
+// }
+// #foglayer_01,
+// #foglayer_02,
+// #foglayer_03 {
+//   height: 400%;
+//   position: absolute;
+//   width: 100%;
+// }
+// #foglayer_01 .image01,
+// #foglayer_01 .image02,
+// #foglayer_02 .image01,
+// #foglayer_02 .image02,
+// #foglayer_03 .image01,
+// #foglayer_03 .image02 {
+//   height: 50%;
+//   width: 100%;
+// }
+// #foglayer_01 {
+//   -webkit-animation: foglayer_01_opacity 15s linear infinite,
+//     foglayer_moveme 50s linear infinite;
+//   -moz-animation: foglayer_01_opacity 15s linear infinite,
+//     foglayer_moveme 50s linear infinite;
+//   animation: foglayer_01_opacity 15s linear infinite,
+//     foglayer_moveme 50s linear infinite;
+// }
+// #foglayer_02,
+// #foglayer_03 {
+//   -webkit-animation: foglayer_02_opacity 25s linear infinite,
+//     foglayer_moveme 60s linear infinite;
+//   -moz-animation: foglayer_02_opacity 25s linear infinite,
+//     foglayer_moveme 60s linear infinite;
+//   animation: foglayer_02_opacity 25s linear infinite,
+//     foglayer_moveme 60s linear infinite;
+// }
+
+// #foglayer_01 .image01,
+// #foglayer_01 .image02 {
+//   background: url("../images/fog1.png") center center/cover transparent;
+//   background-repeat: repeat-y;
+// }
+// #foglayer_02 .image01,
+// #foglayer_02 .image02,
+// #foglayer_03 .image01,
+// #foglayer_03 .image02 {
+//   background: url("../images/fog2.png") center center/cover transparent;
+//   background-repeat: repeat-y;
+// }
+// .smoke2 {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   overflow: hidden;
+//   &Wrapper {
+//     position: relative;
+//   }
+// }
+// #foglayer_011,
+// #foglayer_022,
+// #foglayer_033 {
+//   height: 400%;
+//   position: absolute;
+//   width: 100%;
+// }
+// #foglayer_011 .image011,
+// #foglayer_011 .image022,
+// #foglayer_022 .image011,
+// #foglayer_022 .image022,
+// #foglayer_033 .image011,
+// #foglayer_033 .image022 {
+//   height: 50%;
+//   width: 100%;
+// }
+// #foglayer_011 {
+//   -webkit-animation: foglayer_01_opacity 10s linear infinite,
+//     foglayer_moveme 25s linear infinite;
+//   -moz-animation: foglayer_01_opacity 10s linear infinite,
+//     foglayer_moveme 25s linear infinite;
+//   animation: foglayer_01_opacity 10s linear infinite,
+//     foglayer_moveme 25s linear infinite;
+// }
+// #foglayer_022,
+// #foglayer_033 {
+//   -webkit-animation: foglayer_02_opacity 21s linear infinite,
+//     foglayer_moveme 25s linear infinite;
+//   -moz-animation: foglayer_02_opacity 21s linear infinite,
+//     foglayer_moveme 25s linear infinite;
+//   animation: foglayer_02_opacity 21s linear infinite,
+//     foglayer_moveme 25s linear infinite;
+// }
+
+// #foglayer_011 .image011,
+// #foglayer_011 .image022 {
+//   background: url("../images/fog1-1.png") center center/cover transparent;
+//   background-repeat: repeat-y;
+// }
+// // #foglayer_022 .image011,
+// // #foglayer_022 .image022,
+// // #foglayer_033 .image011,
+// // #foglayer_033 .image022 {
+// //   background: url("../images/fog1-1.png") center center/cover transparent;
+// //   background-repeat: repeat-y;
+// // }
+// // /* ---------- Keyframe Layer 1 ---------- */
+// @keyframes foglayer_01_opacity {
+//   0% {
+//     opacity: 0.2;
+//   }
+//   22% {
+//     opacity: 0.5;
+//   }
+//   40% {
+//     opacity: 0.28;
+//   }
+//   58% {
+//     opacity: 0.4;
+//   }
+//   80% {
+//     opacity: 0.16;
+//   }
+//   100% {
+//     opacity: 0.2;
+//   }
+// }
+// /* ---------- Keyframe Layer 2 ---------- */
+// @keyframes foglayer_02_opacity {
+//   0% {
+//     opacity: 0.5;
+//   }
+//   25% {
+//     opacity: 0.4;
+//   }
+//   50% {
+//     opacity: 0.2;
+//   }
+//   80% {
+//     opacity: 0.4;
+//   }
+//   100% {
+//     opacity: 0.5;
+//   }
+// }
+// /* ---------- Keyframe Layer 3 ---------- */
+// @keyframes foglayer_03_opacity {
+//   0% {
+//     opacity: 0.8;
+//   }
+//   27% {
+//     opacity: 0.2;
+//   }
+//   52% {
+//     opacity: 0.6;
+//   }
+//   68% {
+//     opacity: 0.2;
+//   }
+//   100% {
+//     opacity: 0.8;
+//   }
+// }
+// /* ---------- Keyframe moveMe ---------- */
+// @keyframes foglayer_moveme {
+//   0% {
+//     top: 0;
+//   }
+//   100% {
+//     top: -200%;
+//   }
+// }
+// @media only screen and (min-width: 280px) and (max-width: 767px) {
+//   #foglayer_01 .image01,
+//   #foglayer_01 .image02,
+//   #foglayer_02 .image01,
+//   #foglayer_02 .image02,
+//   #foglayer_03 .image01,
+//   #foglayer_03 .image02 {
+//     width: 100%;
+//   }
+// }

@@ -1,0 +1,95 @@
+.shape {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
+  &-1 {
+    top: 50px;
+    left: -80%;
+    width: 890px;
+    height: 810px;
+    animation: shapeMove1 14s linear infinite;
+    z-index: 2;
+    transform: rotate(45deg);
+    @keyframes shapeMove1 {
+      0% {
+        top: 50px;
+        left: -80%;
+        width: 890px;
+        height: 810px;
+        transform: rotate(45deg);
+      }
+      50% {
+        top: -30%;
+        left: 20%;
+        transform: rotate(0);
+        width: 1600px;
+        height: 1600px;
+      }
+      0% {
+        top: 50px;
+        left: -80%;
+        width: 890px;
+        height: 810px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  &-2 {
+    top: 60px;
+    left: -150px;
+    width: 500px;
+    height: 600px;
+    z-index: 1;
+    animation: shapeMove2 24s linear infinite;
+  }
+  @keyframes shapeMove2 {
+    0% {
+      top: 60px;
+      left: -150px;
+    }
+    50% {
+      top: -10%;
+      left: 80%;
+      transform: rotate(90deg);
+    }
+    0% {
+      top: 60px;
+      left: -150px;
+    }
+  }
+
+
+
+  &-4 {
+    width: 840px;
+    height: 1100px;
+    top: -300px;
+    right: -150px;
+  }
+  &-5 {
+    bottom: -10%;
+    left: 10%;
+    width: 500px;
+    height: 600px;
+    animation: shapeMove5 24s linear infinite;
+    z-index: 1;
+  }
+  @keyframes shapeMove5 {
+    0% {
+      bottom: -10%;
+      left: 10%;
+    }
+    50% {
+      left: 80%;
+      bottom: -30%;
+    }
+    0% {
+      bottom: -10%;
+      left: 10%;
+    }
+  }
+}

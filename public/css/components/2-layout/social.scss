@@ -1,0 +1,20 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    &__link {
+      margin: 0 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      @include transition;
+      &:hover {
+        opacity: 0.8;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }

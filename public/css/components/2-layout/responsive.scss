@@ -1,0 +1,82 @@
+@include xxlg-xxxlg {
+  .auto__container {
+    padding: 0 40px;
+  }
+  @include nav-xxlg-xxxlg;
+}
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 40px;
+  }
+  @include nav-xlg-xxlg;
+  @include header-xlg-xxlg;
+}
+@include lg-xlg {
+  .auto__container {
+    padding: 0 20px;
+  }
+  @include nav-lg-xlg;
+  @include header-lg-xlg;
+
+  @include intro-lg-xlg;
+  @include founder-lg-xlg;
+  @include recent-lg-xlg;
+  @include about-lg-xlg;
+  @include story-lg-xlg;
+  @include nft-lg-xlg;
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .button {
+    padding: 12px 20px;
+  }
+}
+@include md-lg {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @include intro-md-lg;
+  @include recent-md-lg;
+  @include story-md-lg;
+  @include nft-md-lg;
+  @include roadmap-md-lg;
+
+  @include footer-md-lg;
+  @include header-md-lg;
+  @include nav-md-lg;
+
+}
