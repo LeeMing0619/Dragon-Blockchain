@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useMoralis } from 'react-moralis';
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
@@ -40,6 +41,10 @@ export default function Header() {
       body.classList.remove("active");
     });
   }
+
+  //Moralis
+  const { authenticate, isAuthenticated, logout } = useMoralis();
+
   return (
     <header className="header" id="header">
       <div className="auto__container">
@@ -73,11 +78,39 @@ export default function Header() {
               <a href="#roadmap" className="nav__inner-link">
                 RoadMap
               </a>
-              <a href="/" className="button primary">
-                <img src="images/icons/wallet.svg" alt="wallet" />
-                Connect Wallet
-              </a>
-            </div>
+              { isAuthenticated ? (
+                <a className="button primary"
+                    onClick={() => {
+                      logout();
+                    }}>
+                  <img src="images/icons/wallet.svg" alt="wallet" />
+                  Log out
+                </a>
+              ) : (
+                <a className="button primary"
+                  onClick={() => { console.log('111')
+                    authenticate({ provider: "walletconnect", mobileLinks: [
+                      "rainbow",
+                      "metamask",
+                      "argent",
+                      "trust",
+                      "imtoken",
+                      "pillar",
+                    ],
+                    desktopLinks: [
+                      "encrypted ink",
+                      "metamask",
+                      "argent",
+                      "trust",
+                      "imtoken",
+                      "pillar",
+                    ] });
+                  }}>
+                  <img src="images/icons/wallet.svg" alt="wallet" />
+                  Connect Wallet
+                </a>
+              )}              
+            </div>            
           </nav>
           <div
             className={"burger " + (menu ? "active" : "")}
